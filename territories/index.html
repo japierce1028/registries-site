@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="../mobile.css">
+  <link rel="bookmark" href="https://registry-page.isdcf.com/territories"/>
+  <link rel="canonical" href="https://registry-page.isdcf.com/territories"/>
+<title>Territory Codes</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="../features.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex d-print-none">
+    <a class="navbar-brand" href="https://www.isdcf.com/site/"><img src="../ISDCF-logo.png" width="400" alt="ISDCF"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse site-menu" id="navbarNav">
+      <ul class="navbar-nav ml-auto navbar-right">
+        <li class="nav-item main-nav dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Home <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="https://www.isdcf.com/site/">Welcome</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/about/">About</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/terms/">Agreement of Terms</a>
+          </div>
+        </li>
+        <li class="nav-item main-nav dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            InterSociety <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="https://www.isdcf.com/site/intersociety/">InterSociety</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/intersociety-leadership/">InterSociety Leadership
+</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/ken-mason-award/">Ken Mason Award</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/membership/">Membership</a>
+          </div>
+        </li>
+        <li class="nav-item main-nav dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Meetings <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="https://isdcf.com/site/meetings/">Meetings</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/meeting-notes/about/">Meeting Notes</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/subgroups/">ISDCF SubGroups</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/logistics/">Meeting Logistics</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/events/">Events</a>
+          </div>
+        </li>
+        <li class="nav-item main-nav dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Technical Details <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+            <a class="dropdown-item" href="https://www.isdcf.com/site/technical-docs/">Technical Docs</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/test-content/">Test Content</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/smpte-dcp-tests/">SMPTE DCP Tests</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/smpte-dcp-tests/framing-chart/">Framing Chart</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/smptestandards/">SMPTE and Other Standards</a>
+            <a class="dropdown-item" href="https://www.isdcf.com/site/other-resources/">Other Resources</a>
+          </div>
+        </li>
+        <li class="nav-item main-nav">
+          <a class="nav-link" href="https://registry-page.isdcf.com/">DCNC and Registry</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid bg-light border-bottom">
+    <div class="row p-3 d-print-none breadcrumbs border-bottom">
+        <span class="small"> <a href="https://www.isdcf.com/site/"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/><path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/></svg></a> > <a href="../">Digital Cinema Naming Convention and Metadata Registry</a> > Naming Convention > Territory Codes</span>
+    </div>
+    <div class="row p-3">
+            <div class="container-fluid d-print-none">
+              <ul class="pagination justify-content-between">
+                <li class="page-item"><a class="page-link" href="../openandclosedcaptions/">&laquo; Previous</a></li>
+                <li class="page-item"><a class="page-link" href="../ratings/">Next &raquo;</a></li>
+              </ul>
+            </div>      <div id="sideNav" class="col-lg-2 sidenav pl-0 d-print-none">  
+        <ul class="list-unstyled components rounded">
+          <li><a class="nav-link rounded-top" href="../">Digital Cinema Naming Convention and Metadata Registry</a></li>
+          <li><a class="nav-link" href="../general/">General Tips</a></li>
+          <li><a class="nav-link" href="../illustratedguide/">Illustrated Guide</a></li>
+          <li>
+            <a href="#namingconvention" data-toggle="collapse" aria-expanded="true" class="nav-link">Naming Convention <svg width="1em" height="1em" viewBox="0 0 16 16" class="float-right bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+            <ul class="collapse list-unstyled" id="namingconvention">
+              <li><a class="nav-link pl-4" href="../contenttypes/">Content Types</a></li>
+              <li><a class="nav-link pl-4" href="../contentmodifiers/">Content Modifiers</a></li>
+              <li><a class="nav-link pl-4" href="../labeling3dproduct/">Labeling 3D Product</a></li>
+              <li><a class="nav-link pl-4" href="../labelingcombotrailers/">Labeling &#x27;Combo&#x27; Trailers</a></li>
+              <li><a class="nav-link pl-4" href="../projectoraspectratios/">Projector Aspect Ratios and Resolutions</a></li>
+              <li><a class="nav-link pl-4" href="../languages/">Language Codes</a></li>
+              <li><a class="nav-link pl-4" href="../openandclosedcaptions/">Open and Closed Captions</a></li>
+              <li><a class="nav-link pl-4 active" href="../territories/">Territory Codes</a></li>
+              <li><a class="nav-link pl-4" href="../ratings/">Ratings</a></li>
+              <li><a class="nav-link pl-4" href="../audioconfigs/">Audio Config and Narrative Description Tracks</a></li>
+              <li><a class="nav-link pl-4" href="../studios/">Studio Codes</a></li>
+              <li><a class="nav-link pl-4" href="../creationdate/">Creation Date</a></li>
+              <li><a class="nav-link pl-4" href="../facilities/">Facility Codes</a></li>
+              <li><a class="nav-link pl-4" href="../standard/">Standard</a></li>
+              <li><a class="nav-link pl-4" href="../pkgtypes/">Package Types</a></li>
+              <li><a class="nav-link pl-4" href="../imax/">IMAX</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#metadataregistry" data-toggle="collapse" aria-expanded="true" class="nav-link">Metadata Registry <svg width="1em" height="1em" viewBox="0 0 16 16" class="float-right bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+            <ul class="collapse list-unstyled" id="metadataregistry">
+              <li><a class="nav-link pl-4" href="../registryintro/">Introduction</a></li>
+              <li><a class="nav-link pl-4" href="../cplmetadataexts/">CPL Metadata Extensions</a></li>
+              <li><a class="nav-link pl-4" href="../kdmforensicflags/">KDM Forensic Flags</a></li>
+              <li><a class="nav-link pl-4" href="../uls/">ULs</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="../references/">References</a></li>
+          <li><a class="nav-link" href="../acknowledgements/">Acknowledgements</a></li>
+          <li><a class="nav-link" href="../translations/">Translations</a></li>
+          <li><a class="nav-link rounded-bottom" href="../updates/">Updates</a></li>
+        </ul>
+      </div>
+      <div class="col bg-white rounded border pl-0 pr-0" id="main">
+        <nav class="navbar navbar-expand-md navbar-light d-flex">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><span class="d-none d-print-block">DCNC and Metadata Registry: </span>Territory Codes</a>
+          </div>
+          <ul class="nav navbar-nav d-print-none ml-auto navbar-right">
+            <li>
+              <a id="json-feed" target="_blank" class="nav-link" href="https://registry.isdcf.com/territories"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/></svg> JSON Feed</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="window.print();return false;" class="nav-link" title="Print Page"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16"><path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/><path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/></svg> Print Page</a>
+            </li>
+          </ul>
+        </nav>
+<a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+<a class="anchor" id="top" href="#top"></a>  <!-- Markdown content starts -->
+          <div class="row p-3">
+            <div class="col-md-8">
+              <div class="container-fluid"> 
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#ov">Overview</a></li>
+                  <li class="nav-item d-print-none"><a class="nav-link" data-toggle="tab" href="#cpl">CPL Usage</a></li>
+                </ul>
+                <div class="tab-content p-3">
+                  <div class="tab-pane active" id="ov">
+                    <div class="ovHide" id="ovShow">
+<p>If you have a DCP and you need to determine its territory, use this table.  If you are creating a DCP and you need to know what code to use for a territory, use this table.  For countries not in this table, try the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA Subtag Registry</a>. Country codes are based on ISO 3166-1 country codes whenever possible.  Exceptions are denoted with a <code>Tag Scope</code>.</p>
+<p>For generic international versions you may replace the Territory and Rating codes in the CTT with:</p>
+<ul>
+<li><code>INT-TD</code> to denote International Texted</li>
+<li><code>INT-TL</code> to denote International Textless</li>
+</ul>
+
+                    </div>
+                  </div>
+                  <div class="tab-pane d-print-none" id="cpl">
+<p>The Release Territory is listed at <strong>//Reel[1]//CompositionMetadataAsset/ReleaseTerritory</strong><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<pre><code>&lt;CompositionMetadataAsset xmlns=”http://www.smpte-ra.org/schemas/429-16/2014/CPL-Metadata”&gt;
+  …
+  &lt;ReleaseTerritory&gt;US&lt;/ReleaseTerritory&gt;
+  …
+&lt;/CompositionMetadataAsset&gt;
+</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><em>Permissible values for the Release Territory are governed by the scope attribute.  The value of the scope attribute informs the recipient which values can be present in ReleaseTerritory. For instance, if the default value (<a href="http://www.smpte-ra.org/schemas/429-16/2014/CPL-Metadata#scope/release-territory/UNM49">http://www.smpte-ra.org/schemas/429-16/2014/CPL-Metadata#scope/release-territory/UNM49</a>) is used, then only values defined in the IETF RFC 5646 Language SubtagRegistry. Future versions of the specification (or individual parties) can define additional permissible sets of values by introducing new values for the scope attribute. If a recipient finds a scope value it does not understand, it will not know what values can be present, but should nevertheless present them to the user. In other words, whereas the choice of contents for, say <code>FullContentTitleText</code>, is left entirely to the author, the contents of a <code>ReleaseTerritory</code> instance is intended to be limited to the values permitted by the controlled vocabulary identified by the value of the scope attribute. By default, these are specified by IETF RFC 5646. RFC 5646 does not allow all the territory codes listed on this page, nor does it allow <code>INT</code>.</em> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><em>Release Territory codes should be in upper case.</em> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="border bg-light p-3 font-italic">
+<p><strong>Special Exception Note:</strong> <code>OV</code> (Original Version) is a territory agnostic “base” package. Some studios use this as a package that can be used in many territories by applying VF files to customize to specific territories. In this case, as per ST 429-16 for <code>ReleaseTerritory</code> metadata: “…for generic international versions, the code <code>001</code> shall be used.”</p>
+
+              </div>
+            </div>
+          </div>
+  <!-- Markdown content ends -->
+  <!-- Registry content starts - do not edit above this line -->
+          <table id="sorttable" class="table table-small table-hover display">
+            <thead id="tableheader" class="thead-light">
+              <tr>
+                <th scope="col" class="align-text-top">Territory<br><small>(Country/Region)</small></th>
+                <th scope="col" class="align-text-top">DCNC Code<br><small>(For CTT)</small></th>
+                <th scope="col" class="align-text-top">ReleaseTerritory Tag<br><small>(For DCP Metadata)</small></th>
+                <th scope="col" class="align-text-top">Tag Scope<br><small>(For DCP Metadata)</small></th>
+                <th scope="col" class="align-text-top text-wrap col-2">Notes</th>
+              </tr>
+            </thead>
+            <tbody id="searchTable">
+              <tr id="territory-AE">
+                <td>
+                  <span class="description">United Arab Emirates</span>
+                </td>
+                <td class="code">
+                  <code>AE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AE" href="#AE"></a><code>AE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AL">
+                <td>
+                  <span class="description">Albania</span>
+                </td>
+                <td class="code">
+                  <code>AL</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AL" href="#AL"></a><code>AL</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AM">
+                <td>
+                  <span class="description">Armenia</span>
+                </td>
+                <td class="code">
+                  <code>AM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AM" href="#AM"></a><code>AM</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CW">
+                <td>
+                  <span class="description">Curacao</span>
+                </td>
+                <td class="code">
+                  <code>AN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CW" href="#CW"></a><code>CW</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AR">
+                <td>
+                  <span class="description">Argentina</span>
+                </td>
+                <td class="code">
+                  <code>AR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AR" href="#AR"></a><code>AR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AT">
+                <td>
+                  <span class="description">Austria</span>
+                </td>
+                <td class="code">
+                  <code>AT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AT" href="#AT"></a><code>AT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AU">
+                <td>
+                  <span class="description">Australia</span>
+                </td>
+                <td class="code">
+                  <code>AU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AU" href="#AU"></a><code>AU</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AW">
+                <td>
+                  <span class="description">Aruba</span>
+                </td>
+                <td class="code">
+                  <code>AW</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AW" href="#AW"></a><code>AW</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AZ">
+                <td>
+                  <span class="description">Azerbaijan</span>
+                </td>
+                <td class="code">
+                  <code>AZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AZ" href="#AZ"></a><code>AZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BA">
+                <td>
+                  <span class="description">Bosnia and Herzegovina</span>
+                </td>
+                <td class="code">
+                  <code>BA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BA" href="#BA"></a><code>BA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BD">
+                <td>
+                  <span class="description">Bangladesh</span>
+                </td>
+                <td class="code">
+                  <code>BD</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BD" href="#BD"></a><code>BD</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BE">
+                <td>
+                  <span class="description">Belgium</span>
+                </td>
+                <td class="code">
+                  <code>BE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BE" href="#BE"></a><code>BE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BG">
+                <td>
+                  <span class="description">Bulgaria</span>
+                </td>
+                <td class="code">
+                  <code>BG</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BG" href="#BG"></a><code>BG</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BH">
+                <td>
+                  <span class="description">Bahrain</span>
+                </td>
+                <td class="code">
+                  <code>BH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BH" href="#BH"></a><code>BH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BO">
+                <td>
+                  <span class="description">Bolivia</span>
+                </td>
+                <td class="code">
+                  <code>BO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BO" href="#BO"></a><code>BO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BR">
+                <td>
+                  <span class="description">Brazil</span>
+                </td>
+                <td class="code">
+                  <code>BR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BR" href="#BR"></a><code>BR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BY">
+                <td>
+                  <span class="description">Belarus</span>
+                </td>
+                <td class="code">
+                  <code>BY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BY" href="#BY"></a><code>BY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-BZ">
+                <td>
+                  <span class="description">Belize</span>
+                </td>
+                <td class="code">
+                  <code>BZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="BZ" href="#BZ"></a><code>BZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CA">
+                <td>
+                  <span class="description">Canada</span>
+                </td>
+                <td class="code">
+                  <code>CA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CA" href="#CA"></a><code>CA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CH">
+                <td>
+                  <span class="description">Switzerland</span>
+                </td>
+                <td class="code">
+                  <code>CH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CH" href="#CH"></a><code>CH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CL">
+                <td>
+                  <span class="description">Chile</span>
+                </td>
+                <td class="code">
+                  <code>CL</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CL" href="#CL"></a><code>CL</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CN">
+                <td>
+                  <span class="description">China Mainland</span>
+                </td>
+                <td class="code">
+                  <code>CN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CN" href="#CN"></a><code>CN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CO">
+                <td>
+                  <span class="description">Colombia</span>
+                </td>
+                <td class="code">
+                  <code>CO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CO" href="#CO"></a><code>CO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CR">
+                <td>
+                  <span class="description">Costa Rica</span>
+                </td>
+                <td class="code">
+                  <code>CR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CR" href="#CR"></a><code>CR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-RS">
+                <td>
+                  <span class="description">Serbia</span>
+                </td>
+                <td class="code">
+                  <code>CS</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="RS" href="#RS"></a><code>RS</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CY">
+                <td>
+                  <span class="description">Cyprus</span>
+                </td>
+                <td class="code">
+                  <code>CY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CY" href="#CY"></a><code>CY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-CZ">
+                <td>
+                  <span class="description">Czech Republic</span>
+                </td>
+                <td class="code">
+                  <code>CZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="CZ" href="#CZ"></a><code>CZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-DE">
+                <td>
+                  <span class="description">Germany</span>
+                </td>
+                <td class="code">
+                  <code>DE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="DE" href="#DE"></a><code>DE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-DK">
+                <td>
+                  <span class="description">Denmark</span>
+                </td>
+                <td class="code">
+                  <code>DK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="DK" href="#DK"></a><code>DK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-DO">
+                <td>
+                  <span class="description">Dominican Republic</span>
+                </td>
+                <td class="code">
+                  <code>DO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="DO" href="#DO"></a><code>DO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-AE-DU">
+                <td>
+                  <span class="description">Dubai</span>
+                </td>
+                <td class="code">
+                  <code>DU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="AE-DU" href="#AE-DU"></a><code>AE-DU</code>
+                </td>
+                <td class="cell-breakAll">
+                  <a target="_blank" href="https://isdcf.com/ns/cplmd/territories"><code>https://isdcf.com/ns/cplmd/territories</code></a>
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-EC">
+                <td>
+                  <span class="description">Ecuador</span>
+                </td>
+                <td class="code">
+                  <code>EC</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="EC" href="#EC"></a><code>EC</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-EE">
+                <td>
+                  <span class="description">Estonia</span>
+                </td>
+                <td class="code">
+                  <code>EE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="EE" href="#EE"></a><code>EE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-EG">
+                <td>
+                  <span class="description">Egypt</span>
+                </td>
+                <td class="code">
+                  <code>EG</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="EG" href="#EG"></a><code>EG</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-ES">
+                <td>
+                  <span class="description">Spain</span>
+                </td>
+                <td class="code">
+                  <code>ES</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="ES" href="#ES"></a><code>ES</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-ET">
+                <td>
+                  <span class="description">Ethiopia</span>
+                </td>
+                <td class="code">
+                  <code>ET</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="ET" href="#ET"></a><code>ET</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-FI">
+                <td>
+                  <span class="description">Finland</span>
+                </td>
+                <td class="code">
+                  <code>FI</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="FI" href="#FI"></a><code>FI</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-FR">
+                <td>
+                  <span class="description">France</span>
+                </td>
+                <td class="code">
+                  <code>FR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="FR" href="#FR"></a><code>FR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GE">
+                <td>
+                  <span class="description">Georgia</span>
+                </td>
+                <td class="code">
+                  <code>GE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GE" href="#GE"></a><code>GE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GH">
+                <td>
+                  <span class="description">Ghana</span>
+                </td>
+                <td class="code">
+                  <code>GH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GH" href="#GH"></a><code>GH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GP">
+                <td>
+                  <span class="description">Guadeloupe</span>
+                </td>
+                <td class="code">
+                  <code>GP</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GP" href="#GP"></a><code>GP</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GR">
+                <td>
+                  <span class="description">Greece</span>
+                </td>
+                <td class="code">
+                  <code>GR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GR" href="#GR"></a><code>GR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GT">
+                <td>
+                  <span class="description">Guatemala</span>
+                </td>
+                <td class="code">
+                  <code>GT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GT" href="#GT"></a><code>GT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-HK">
+                <td>
+                  <span class="description">Hong Kong</span>
+                </td>
+                <td class="code">
+                  <code>HK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="HK" href="#HK"></a><code>HK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-HN">
+                <td>
+                  <span class="description">Honduras</span>
+                </td>
+                <td class="code">
+                  <code>HN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="HN" href="#HN"></a><code>HN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-HR">
+                <td>
+                  <span class="description">Croatia</span>
+                </td>
+                <td class="code">
+                  <code>HR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="HR" href="#HR"></a><code>HR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-HU">
+                <td>
+                  <span class="description">Hungary</span>
+                </td>
+                <td class="code">
+                  <code>HU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="HU" href="#HU"></a><code>HU</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-ID">
+                <td>
+                  <span class="description">Indonesia</span>
+                </td>
+                <td class="code">
+                  <code>ID</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="ID" href="#ID"></a><code>ID</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IE">
+                <td>
+                  <span class="description">Ireland</span>
+                </td>
+                <td class="code">
+                  <code>IE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IE" href="#IE"></a><code>IE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IL">
+                <td>
+                  <span class="description">Israel</span>
+                </td>
+                <td class="code">
+                  <code>IL</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IL" href="#IL"></a><code>IL</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IN">
+                <td>
+                  <span class="description">India</span>
+                </td>
+                <td class="code">
+                  <code>IN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IN" href="#IN"></a><code>IN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-001">
+                <td>
+                  <span class="description">International</span>
+                </td>
+                <td class="code">
+                  <code>INT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="001" href="#001"></a><code>001</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IQ">
+                <td>
+                  <span class="description">Iraq</span>
+                </td>
+                <td class="code">
+                  <code>IQ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IQ" href="#IQ"></a><code>IQ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IS">
+                <td>
+                  <span class="description">Iceland</span>
+                </td>
+                <td class="code">
+                  <code>IS</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IS" href="#IS"></a><code>IS</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-IT">
+                <td>
+                  <span class="description">Italy</span>
+                </td>
+                <td class="code">
+                  <code>IT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="IT" href="#IT"></a><code>IT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-JM">
+                <td>
+                  <span class="description">Jamaica</span>
+                </td>
+                <td class="code">
+                  <code>JM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="JM" href="#JM"></a><code>JM</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-JO">
+                <td>
+                  <span class="description">Jordan</span>
+                </td>
+                <td class="code">
+                  <code>JO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="JO" href="#JO"></a><code>JO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-JP">
+                <td>
+                  <span class="description">Japan</span>
+                </td>
+                <td class="code">
+                  <code>JP</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="JP" href="#JP"></a><code>JP</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KE">
+                <td>
+                  <span class="description">Kenya</span>
+                </td>
+                <td class="code">
+                  <code>KE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KE" href="#KE"></a><code>KE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KG">
+                <td>
+                  <span class="description">Kyrgyzstan</span>
+                </td>
+                <td class="code">
+                  <code>KG</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KG" href="#KG"></a><code>KG</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KH">
+                <td>
+                  <span class="description">Cambodia</span>
+                </td>
+                <td class="code">
+                  <code>KH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KH" href="#KH"></a><code>KH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KP">
+                <td>
+                  <span class="description">North Korea</span>
+                </td>
+                <td class="code">
+                  <code>KP</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KP" href="#KP"></a><code>KP</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KR">
+                <td>
+                  <span class="description">South Korea</span>
+                </td>
+                <td class="code">
+                  <code>KR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KR" href="#KR"></a><code>KR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KW">
+                <td>
+                  <span class="description">Kuwait</span>
+                </td>
+                <td class="code">
+                  <code>KW</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KW" href="#KW"></a><code>KW</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-KZ">
+                <td>
+                  <span class="description">Kazakhstan</span>
+                </td>
+                <td class="code">
+                  <code>KZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="KZ" href="#KZ"></a><code>KZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LA">
+                <td>
+                  <span class="description">Lao People&#x27;s Democratic Republic</span>
+                </td>
+                <td class="code">
+                  <code>LA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LA" href="#LA"></a><code>LA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-419">
+                <td>
+                  <span class="description">Latin America</span>
+                </td>
+                <td class="code">
+                  <code>LAS</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="419" href="#419"></a><code>419</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LB">
+                <td>
+                  <span class="description">Lebanon</span>
+                </td>
+                <td class="code">
+                  <code>LB</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LB" href="#LB"></a><code>LB</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LK">
+                <td>
+                  <span class="description">Sri Lanka</span>
+                </td>
+                <td class="code">
+                  <code>LK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LK" href="#LK"></a><code>LK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LT">
+                <td>
+                  <span class="description">Lithuania</span>
+                </td>
+                <td class="code">
+                  <code>LT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LT" href="#LT"></a><code>LT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LU">
+                <td>
+                  <span class="description">Luxembourg</span>
+                </td>
+                <td class="code">
+                  <code>LU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LU" href="#LU"></a><code>LU</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-LV">
+                <td>
+                  <span class="description">Latvia</span>
+                </td>
+                <td class="code">
+                  <code>LV</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="LV" href="#LV"></a><code>LV</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MA">
+                <td>
+                  <span class="description">Morocco</span>
+                </td>
+                <td class="code">
+                  <code>MA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MA" href="#MA"></a><code>MA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MD">
+                <td>
+                  <span class="description">Moldova</span>
+                </td>
+                <td class="code">
+                  <code>MD</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MD" href="#MD"></a><code>MD</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-ME">
+                <td>
+                  <span class="description">Montenegro</span>
+                </td>
+                <td class="code">
+                  <code>ME</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="ME" href="#ME"></a><code>ME</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MK">
+                <td>
+                  <span class="description">Macedonia</span>
+                </td>
+                <td class="code">
+                  <code>MK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MK" href="#MK"></a><code>MK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MM">
+                <td>
+                  <span class="description">Myanmar</span>
+                </td>
+                <td class="code">
+                  <code>MM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MM" href="#MM"></a><code>MM</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MN">
+                <td>
+                  <span class="description">Mongolia</span>
+                </td>
+                <td class="code">
+                  <code>MN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MN" href="#MN"></a><code>MN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MO">
+                <td>
+                  <span class="description">Macao</span>
+                </td>
+                <td class="code">
+                  <code>MO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MO" href="#MO"></a><code>MO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MQ">
+                <td>
+                  <span class="description">Martinique</span>
+                </td>
+                <td class="code">
+                  <code>MQ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MQ" href="#MQ"></a><code>MQ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MT">
+                <td>
+                  <span class="description">Malta</span>
+                </td>
+                <td class="code">
+                  <code>MT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MT" href="#MT"></a><code>MT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MU">
+                <td>
+                  <span class="description">Mauritius</span>
+                </td>
+                <td class="code">
+                  <code>MU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MU" href="#MU"></a><code>MU</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MV">
+                <td>
+                  <span class="description">Maldives</span>
+                </td>
+                <td class="code">
+                  <code>MV</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MV" href="#MV"></a><code>MV</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MX">
+                <td>
+                  <span class="description">Mexico</span>
+                </td>
+                <td class="code">
+                  <code>MX</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MX" href="#MX"></a><code>MX</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-MY">
+                <td>
+                  <span class="description">Malaysia</span>
+                </td>
+                <td class="code">
+                  <code>MY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="MY" href="#MY"></a><code>MY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-003">
+                <td>
+                  <span class="description">North America</span>
+                </td>
+                <td class="code">
+                  <code>NAM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="003" href="#003"></a><code>003</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NC">
+                <td>
+                  <span class="description">New Caledonia</span>
+                </td>
+                <td class="code">
+                  <code>NC</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NC" href="#NC"></a><code>NC</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NG">
+                <td>
+                  <span class="description">Nigeria</span>
+                </td>
+                <td class="code">
+                  <code>NG</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NG" href="#NG"></a><code>NG</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NI">
+                <td>
+                  <span class="description">Nicaragua</span>
+                </td>
+                <td class="code">
+                  <code>NI</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NI" href="#NI"></a><code>NI</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NL">
+                <td>
+                  <span class="description">Netherlands</span>
+                </td>
+                <td class="code">
+                  <code>NL</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NL" href="#NL"></a><code>NL</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NO">
+                <td>
+                  <span class="description">Norway</span>
+                </td>
+                <td class="code">
+                  <code>NO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NO" href="#NO"></a><code>NO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NP">
+                <td>
+                  <span class="description">Nepal</span>
+                </td>
+                <td class="code">
+                  <code>NP</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NP" href="#NP"></a><code>NP</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-NZ">
+                <td>
+                  <span class="description">New Zealand</span>
+                </td>
+                <td class="code">
+                  <code>NZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="NZ" href="#NZ"></a><code>NZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-OM">
+                <td>
+                  <span class="description">Oman</span>
+                </td>
+                <td class="code">
+                  <code>OM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="OM" href="#OM"></a><code>OM</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PA">
+                <td>
+                  <span class="description">Panama</span>
+                </td>
+                <td class="code">
+                  <code>PA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PA" href="#PA"></a><code>PA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PE">
+                <td>
+                  <span class="description">Peru</span>
+                </td>
+                <td class="code">
+                  <code>PE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PE" href="#PE"></a><code>PE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PF">
+                <td>
+                  <span class="description">French Polynesia</span>
+                </td>
+                <td class="code">
+                  <code>PF</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PF" href="#PF"></a><code>PF</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PH">
+                <td>
+                  <span class="description">Philippines</span>
+                </td>
+                <td class="code">
+                  <code>PH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PH" href="#PH"></a><code>PH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PK">
+                <td>
+                  <span class="description">Pakistan</span>
+                </td>
+                <td class="code">
+                  <code>PK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PK" href="#PK"></a><code>PK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PL">
+                <td>
+                  <span class="description">Poland</span>
+                </td>
+                <td class="code">
+                  <code>PL</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PL" href="#PL"></a><code>PL</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PT">
+                <td>
+                  <span class="description">Portugal</span>
+                </td>
+                <td class="code">
+                  <code>PT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PT" href="#PT"></a><code>PT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-PY">
+                <td>
+                  <span class="description">Paraguay</span>
+                </td>
+                <td class="code">
+                  <code>PY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="PY" href="#PY"></a><code>PY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-QA">
+                <td>
+                  <span class="description">Qatar</span>
+                </td>
+                <td class="code">
+                  <code>QA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="QA" href="#QA"></a><code>QA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-RE">
+                <td>
+                  <span class="description">Reunion</span>
+                </td>
+                <td class="code">
+                  <code>RE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="RE" href="#RE"></a><code>RE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-RO">
+                <td>
+                  <span class="description">Romania</span>
+                </td>
+                <td class="code">
+                  <code>RO</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="RO" href="#RO"></a><code>RO</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-RU">
+                <td>
+                  <span class="description">Russia</span>
+                </td>
+                <td class="code">
+                  <code>RU</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="RU" href="#RU"></a><code>RU</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SA">
+                <td>
+                  <span class="description">Saudi Arabia</span>
+                </td>
+                <td class="code">
+                  <code>SA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SA" href="#SA"></a><code>SA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SE">
+                <td>
+                  <span class="description">Sweden</span>
+                </td>
+                <td class="code">
+                  <code>SE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SE" href="#SE"></a><code>SE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SG">
+                <td>
+                  <span class="description">Singapore</span>
+                </td>
+                <td class="code">
+                  <code>SG</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SG" href="#SG"></a><code>SG</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SI">
+                <td>
+                  <span class="description">Slovenia</span>
+                </td>
+                <td class="code">
+                  <code>SI</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SI" href="#SI"></a><code>SI</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SK">
+                <td>
+                  <span class="description">Slovakia</span>
+                </td>
+                <td class="code">
+                  <code>SK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SK" href="#SK"></a><code>SK</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SN">
+                <td>
+                  <span class="description">Senegal</span>
+                </td>
+                <td class="code">
+                  <code>SN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SN" href="#SN"></a><code>SN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SV">
+                <td>
+                  <span class="description">El Salvador</span>
+                </td>
+                <td class="code">
+                  <code>SV</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SV" href="#SV"></a><code>SV</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-SY">
+                <td>
+                  <span class="description">Syrian Arab Republic</span>
+                </td>
+                <td class="code">
+                  <code>SY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="SY" href="#SY"></a><code>SY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TH">
+                <td>
+                  <span class="description">Thailand</span>
+                </td>
+                <td class="code">
+                  <code>TH</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TH" href="#TH"></a><code>TH</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TJ">
+                <td>
+                  <span class="description">Tjikistan</span>
+                </td>
+                <td class="code">
+                  <code>TJ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TJ" href="#TJ"></a><code>TJ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TM">
+                <td>
+                  <span class="description">Turkmenistan</span>
+                </td>
+                <td class="code">
+                  <code>TM</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TM" href="#TM"></a><code>TM</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TN">
+                <td>
+                  <span class="description">Tunisia</span>
+                </td>
+                <td class="code">
+                  <code>TN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TN" href="#TN"></a><code>TN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TR">
+                <td>
+                  <span class="description">Türkiye</span>
+                </td>
+                <td class="code">
+                  <code>TR</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TR" href="#TR"></a><code>TR</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                  <small><em>Legacy territory name: &#x27;Turkey&#x27;</em></small>
+                </td>
+              </tr>
+              <tr id="territory-TT">
+                <td>
+                  <span class="description">Trinidad</span>
+                </td>
+                <td class="code">
+                  <code>TT</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TT" href="#TT"></a><code>TT</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TW">
+                <td>
+                  <span class="description">Taiwan</span>
+                </td>
+                <td class="code">
+                  <code>TW</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TW" href="#TW"></a><code>TW</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-TZ">
+                <td>
+                  <span class="description">Tanzania</span>
+                </td>
+                <td class="code">
+                  <code>TZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="TZ" href="#TZ"></a><code>TZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-UA">
+                <td>
+                  <span class="description">Ukraine</span>
+                </td>
+                <td class="code">
+                  <code>UA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="UA" href="#UA"></a><code>UA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-GB">
+                <td>
+                  <span class="description">United Kingdom</span>
+                </td>
+                <td class="code">
+                  <code>UK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="GB" href="#GB"></a><code>GB</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-US">
+                <td>
+                  <span class="description">United States</span>
+                </td>
+                <td class="code">
+                  <code>US</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="US" href="#US"></a><code>US</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-UY">
+                <td>
+                  <span class="description">Uruguay</span>
+                </td>
+                <td class="code">
+                  <code>UY</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="UY" href="#UY"></a><code>UY</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-UZ">
+                <td>
+                  <span class="description">Uzbekistan</span>
+                </td>
+                <td class="code">
+                  <code>UZ</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="UZ" href="#UZ"></a><code>UZ</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-VE">
+                <td>
+                  <span class="description">Venezuela</span>
+                </td>
+                <td class="code">
+                  <code>VE</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="VE" href="#VE"></a><code>VE</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-VN">
+                <td>
+                  <span class="description">Vietnam</span>
+                </td>
+                <td class="code">
+                  <code>VN</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="VN" href="#VN"></a><code>VN</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-WS">
+                <td>
+                  <span class="description">Samoa</span>
+                </td>
+                <td class="code">
+                  <code>WS</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="WS" href="#WS"></a><code>WS</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-ZA">
+                <td>
+                  <span class="description">South Africa</span>
+                </td>
+                <td class="code">
+                  <code>ZA</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="ZA" href="#ZA"></a><code>ZA</code>
+                </td>
+                <td class="cell-breakAll">
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+              <tr id="territory-XK">
+                <td>
+                  <span class="description">Kosovo</span>
+                </td>
+                <td class="code">
+                  <code>ZK</code>
+                </td>
+                <td class="rfc">
+                  <a class="anchor" id="XK" href="#XK"></a><code>XK</code>
+                </td>
+                <td class="cell-breakAll">
+                  <a target="_blank" href="https://isdcf.com/ns/cplmd/territories"><code>https://isdcf.com/ns/cplmd/territories</code></a>
+                </td>
+                <td class="comment">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+<!-- Main content ends - do not edit below this line -->
+        </div>
+      </div>
+            <div class="container-fluid d-print-none">
+              <ul class="pagination justify-content-between">
+                <li class="page-item"><a class="page-link" href="../openandclosedcaptions/">&laquo; Previous</a></li>
+                <li class="page-item"><a class="page-link" href="../ratings/">Next &raquo;</a></li>
+              </ul>
+            </div>    </div>
+  <footer class="page-footer font-small">
+    <div class="row d-flex align-items-center text-center p-3">
+      <div class="col text-center">
+        <small class="text-muted">
+          Registry version: <code>external/registries</code>
+          <br>Site version: <code>638fa71181649c182c49dacf8503619cb4114415</code>
+          <br>Generated on Tue Apr 11 2023 15:10:59 GMT+0000 (Coordinated Universal Time)
+        </small>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-2 bg-white">
+      <small class="text-muted">
+        ALL DOCUMENTS AND INFORMATION PRESENTED HERE ARE TO BE USED AT YOUR OWN RISK, STRICTLY VOLUNTARY, <br>SHOULD NOT BE USED FOR IMPLEMENTING PRODUCTS, NO WARRANTY EXPRESSED OR IMPLIED. PROVIDED FOR CONVENIENCE ONLY.
+        <br>:: CONTACT: <a href="mailto:INFO@ISDCF.COM">INFO@ISDCF.COM</a> OR <a href="https://github.com/ISDCF/registries-site/issues" target="_blank">https://github.com/ISDCF/registries-site/issues</a> TO OFFER SUGGESTIONS/CORRECTIONS. ::
+        <br>USE AT YOUR OWN RISK
+      </small>
+    <div class="footer-copyright text-center py-2 bg-white">
+      <small class="text-muted">
+        © 2020 Copyright: <a href="https://isdcf.com/">ISDCF.com</a>
+      </small>
+    </div>
+  </div>
+  </footer> 
+</body>
+</html>
